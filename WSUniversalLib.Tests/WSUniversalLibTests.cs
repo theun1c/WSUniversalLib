@@ -4,7 +4,6 @@ namespace WSUniversalLib.Tests
 {
     public class WSUniversalLibTests
     {
-        // ===== ПРОСТЫЕ ТЕСТЫ (10 штук) =====
 
         [Fact]
         [Trait("Category", "Simple")]
@@ -196,8 +195,6 @@ namespace WSUniversalLib.Tests
             Assert.Equal(-1, result);
         }
 
-        // ===== СЛОЖНЫЕ ТЕСТЫ (5 штук) =====
-
         [Fact]
         [Trait("Category", "Complex")]
         public void GetQuantityForProduct_LargeValues_ReturnsCorrectValue()
@@ -215,7 +212,6 @@ namespace WSUniversalLib.Tests
 
             // Assert
             Assert.True(result > 0);
-            // Проверяем, что результат в разумных пределах
             Assert.InRange(result, 169000000, 170000000);
         }
 
@@ -245,7 +241,6 @@ namespace WSUniversalLib.Tests
             // Arrange
             var calculation = new Calculation();
 
-            // Проверяем все комбинации типов продуктов и материалов
             for (int productType = 1; productType <= 3; productType++)
             {
                 for (int materialType = 1; materialType <= 2; materialType++)
