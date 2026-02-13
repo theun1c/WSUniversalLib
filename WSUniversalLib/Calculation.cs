@@ -54,7 +54,7 @@ namespace WSUniversalLib
                 }
 
                 // return val
-                return (int)Math.Round((double)((count * typeCoef * (int)Math.Round(width * length)) / (1 - (materialDefect / 100))));  
+                return (int)Math.Round((double)((count * typeCoef * width * length) / (1 - (materialDefect / 100))));  
             }
             else
             {
