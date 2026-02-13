@@ -1,4 +1,4 @@
 # drop this
 .vs/
-.bin/
-.obj/
+bin/
+obj/
